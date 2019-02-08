@@ -10,7 +10,7 @@ config = {
     'download_url': 'Where to download it.',
     'author_email': 'bikingrox@gmail.com',
     'version': '0.1',
-    'install_requires': ['pytest'],
+    'install_requires': ['pytest', 'pygame'],
     'packages': ['game'],
     'scripts': [],
     'name': 'game'
