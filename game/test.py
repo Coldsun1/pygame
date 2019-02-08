@@ -1,7 +1,7 @@
 import sys
 import pygame
 pygame.init()
-
+# butt
 size = width, height = 320*3, 240*3
 speed = [1, 1]
 black = 0, 0, 0
