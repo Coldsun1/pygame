@@ -1,4 +1,5 @@
 import sys
+import os
 import pygame
 pygame.init()
 # butt
@@ -8,12 +9,14 @@ black = 0, 0, 0
 
 screen = pygame.display.set_mode(size)
 
-ball = pygame.image.load("docs/ddd.gif")
+ball = pygame.image.load("bin/ddd_s.jpg")
 ballrect = ball.get_rect()
 
 while 1:
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: sys.exit()
+        if event.type == pygame.QUIT:
+            os.system('python game/test.py')
+            sys.exit()
 
     ballrect = ballrect.move(speed)
     if ballrect.left < 0 or ballrect.right > width:
